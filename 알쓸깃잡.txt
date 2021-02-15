@@ -1,0 +1,51 @@
+# Git 초기 설정
+1. git config (--global) user.name "name": 사용자 이름 설정
+2. git config (--global) user.email "email@gmail.com": 사용자 이메일 설정
+3. git config --list: 설정한 정보 확인
+
+# Git 파일 영역
+1. Working directory(Untracked) 
+2. Staging area(by git add) 
+3. Git repository(by git commit)
+                    	  	
+# Git 파일 상태
+1. Untracked
+2. Unmodified
+3. Modified
+4. Staged
+
+# Git 관리 상태 확인
+1. git status: file의 status 확인
+2. git log: repository의 log 확인
+
+# Git 가지치기
+1. git branch name: git branch 생성
+2. git branch: 현재 branch 확인
+3. git checkout name: branch 전환
+
+# Git 병합하기
+1. git merge branch: 작업한 내용 병합 
+2. git branch -d name: 사용을 마친 branch 삭제
+3. merge confilct 발생 시: status -> 수정 -> add -> commit 
+
+# Git 파일 끌어오기
+1. git init: 기존 디렉토리를 git repository로 설정 
+2. git remote add origin 주소: 원격 저장소 연결
+3. git pull origin master: 원격 저장소의 데이터 가져오기 
+
+# Git 파일 올리기
+1. git status: 파일의 준비상태 확인  
+2. git add: 파일을 준비영역으로 보내기 
+3. git commit -m "massage": 파일을 git 저장소에 반영 
+4. git push origin master: 원격 저장소에 데이터 전달하기 
+
+# GitLab 
+1. Issue: 주석 기능
+2. MR: 브랜치의 변경 사항을 반영(Merge)하기 위한 요청(Request), 
+         브랜치 생성 -> 커밋 -> Gitlab으로 브랜치 푸시 -> MR
+3. CI: 지속적인(Continuous) 통합(Integrations),
+       코드 작성 -> [빌드 -> 테스트 -> 머지]의 자동화 
+4. Wiki: 프로젝트에 대한 소개, 설명 등의 문서
+5. Lint: 코드에 대한 검사 cf. 기술부채
+6. Role: Guest < Reporter < Developer < Maintainer < Owner	
+
